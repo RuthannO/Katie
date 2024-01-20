@@ -1,0 +1,54 @@
+/*html, body{
+    margin:0;
+    padding: 0;
+    height:100%;
+}*/
+
+@font-face {
+    font-family: 'Jujutsu Kaisen';
+    src: url('./jujutsu-kaisen/Jujutsu\ Kaisen.ttf');
+    font-weight:500;
+    font-style:normal;
+}
+
+body {
+    font-family: 'Jujutsu Kaisen', sans-serif;
+    cursor: url("./gip.gif"), auto;
+    color: antiquewhite;
+    background-color:#13183E ;
+    overflow:hidden;
+}
+    
+
+#pointer {
+    cursor: url("head.png"), auto;
+    width: 100px;
+    height: 100px;
+}
+
+.container{
+    display: flex;
+    height:100vh;
+}
+.bkg {
+    flex: 1;
+    background-image: url(gojo.jpg);
+    background-size: cover;
+    background-position:center;
+    width: 50%;
+}
+.text{
+    flex:1;
+    display: flex;
+    justify-content: right;
+    padding: 20px;
+    text-align: center;
+}
+
+.text h1{
+    font-size:50px;
+    color:black;
+    margin-top:0px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
