@@ -13,10 +13,11 @@
 
 body {
     font-family: 'Jujutsu Kaisen', sans-serif;
-    cursor: url("./gip.gif"), auto;
     color: antiquewhite;
     background-color:#13183E ;
     overflow:hidden;
+    margin:0;
+    
 }
     
 
@@ -29,13 +30,14 @@ body {
 .container{
     display: flex;
     height:100vh;
+
 }
 .bkg {
-    flex: 1;
     background-image: url(gojo.jpg);
     background-size: cover;
     background-position:center;
-    width: 50%;
+    margin-left: 0px;
+    width: 30%;
 }
 .text{
     flex:1;
@@ -44,7 +46,9 @@ body {
     padding: 20px;
     text-align: center;
     width: 100%;
-    align-items: flex-start;
+    background-image: url("./dark_fantasy2.png");
+    background-size: contain;
+
 
 
 }
@@ -57,23 +61,39 @@ body {
     -webkit-text-stroke-color: white;
 }
 .text h2{
-    margin-top:30px;
-    margin-bottom: 40px;
-    text-align: left;
+    margin-top:20px;
+    margin-bottom: 0px;
 }
 .text p{
     font-size: 25px;
-    margin:0;
+    display: inline;
+
+
 }
-#link{
+.link a{
     text-decoration: none;
     color: yellow;
     font-size: large;
 }
 
-.gif{
-    display: block;
+p{
+    margin-bottom: 20px;
+
+
+}
+
+/*.gif{
     width: 100%;
-    height:40%;
+    height:15%;
     display: flex;
+    flex:1;
+}*/
+
+.gip{
+    background-image: url("gip.gif");
+    width:70px;
+    height: 100%;
+    background-repeat: no-repeat;
+    margin-top: 1px;
+
 }
