@@ -40,9 +40,11 @@ body {
 .text{
     flex:1;
     display: flex;
-    justify-content: right;
+    flex-direction: column;
     padding: 20px;
     text-align: center;
+    width: 100%;
+
 }
 
 .text h1{
@@ -51,4 +53,19 @@ body {
     margin-top:0px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
+}
+.text h2{
+    margin-top:30px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+.text p{
+    font-size: 25px;
+    margin-left: 10px;
+
+}
+#link{
+    text-decoration: none;
+    color: yellow;
+    font-size: large;
 }
