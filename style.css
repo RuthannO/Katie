@@ -39,24 +39,40 @@ body {
     margin-left: 0px;
     width: 30%;
 }
+.hero-border{
+    background-image: url("./dark_fantasy3.png");
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom:0;
+    z-index: -1;
+    opacity: 0.6;
+    background-position:left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 400px;
+
+}
 .text{
     flex:1;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
     width: 100%;
-    background-image: url("./dark_fantasy2.png");
-    background-size: contain;
+    background-size: cover;
 
 
 
 }
 
 .text h1{
-    font-size:50px;
+    font-size:60px;
     color:black;
     margin-top:0px;
+   margin-left: 150px;
+   width: 85%;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
 }
@@ -64,6 +80,7 @@ body {
     margin-top:20px;
     margin-bottom: 0px;
 }
+
 .text p{
     font-size: 25px;
     display: inline;
@@ -78,8 +95,6 @@ body {
 
 p{
     margin-bottom: 20px;
-
-
 }
 
 /*.gif{
@@ -96,4 +111,35 @@ p{
     background-repeat: no-repeat;
     margin-top: 1px;
 
+}
+
+#num_count::after {
+    font-size: 40px;
+    animation: counter 2s ease 1 forwards;
+    content: counter(count) "th";
+    counter-reset: count 5;
+}
+
+@keyframes counter {
+    0%, 14% {
+        counter-increment: count 1;
+    }
+    15%, 29% {
+        counter-increment: count 2;
+    }
+    30%, 44% {
+        counter-increment: count 3;
+    }
+    45%, 59% {
+        counter-increment: count 4;
+    }
+    60%, 74% {
+        counter-increment: count 5;
+    }
+    75%, 89% {
+        counter-increment: count 6;
+    }
+    90%, 100% {
+        counter-increment: count 7;
+    }
 }
