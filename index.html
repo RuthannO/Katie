@@ -5,38 +5,61 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="description" content="" />
     <link rel="icon" href="gip.png">
-    <link href="jujutsu-kaisen/Jujutsu Kaisen.ttf" rel="stylesheet">
+    <link href="caprice/Caprice.ttf" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
                 
 </head>
 <body>
- <div class="container">
-    <div class="bkg"></div>
-    <div class="hero-border"></div>
-    <div class="text">
-    <h1>Kaitlyn's Super Duper Cool Sleepover Bash</h1>
-    <p>Join Us To Celebrate Kaitlyn's</p>
-        <div id="num_count"></div>
-    <p>Birthday</p>
-    <h2>Where :</h2>
-    <div class="link">
-     <a target="_blank" href="https://maps.app.goo.gl/XV4VobVQz83QkEjV6">
-        <img class="gip" src="./gip.gif">
-         <p> 9299 minuteman way, West Chester Ohio</p> 
-        <img class="gip"src="./gip.gif">
-     </a>
+    <nav>
+        <ul>
+            <li><a href="#"> Details</a></li>
+            <li><a href="#">Contact Information</a></li>
+
+        </ul>
+    </nav>
+    <div class="container-bkg"><div class="avatar"></div>
+</div>
+<div class="hero-words">
+<h1 class="hero-header"> Kaitlyn's Sleepover Bash</h1>
+<div class="hero-title">
+<p>
+    Get ready for an awesome birthday sleepover for A super cool 12-year-old! It's all about having a blast with best friends,
+    staying up late, and making cool memories. Let's make this sleepover the highlight of her year – casual, fun, and totally unforgettable!</p>
+</div>
+</div>
+<img src="/skull.svg" alt="icon" class="card-icon">
+ <div class="card">
+    <h3 >Where: </h3>
+    <p class="text"><a id="link" target="_blank" href="https://maps.app.goo.gl/eHLNyYJR7vpUPvAr6">9299 MinuteMan Way  West Chester</a></p>
+    <h3>When: </h3>
+    <p class="text"> June 06, 2024 @ 5:30pm</p>
+        <h3 >What To Bring: </h3>
+        <p class="text">Click Here</p>
+ </div>
+ <form id="rsvp" action="/submit-rsvp" method="post">
+    <div class = "form-group">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
     </div>
-    <h2>When :</h2>
-    <p>June 5th, 2024 @ 5:30pm</p>
-    <h2>What To Bring :</h2>
-    <p>yourself!</p>
+    <div class = "form-group">
+        <input type="tel" id="tel" name="tel" placeholder="Parent's Number" required>
     </div>
-    <div class="gif">
-    <!--<div class="tenor-gif-embed" data-postid="704470417616017540" data-share-method="host" data-aspect-ratio="0.680723" data-width="40%"><a href="https://tenor.com/view/gojo-satoru-satoru-gojo-jujutsu-kaisen-jjk-fortnite-gif-704470417616017540">Gojo Satoru Satoru Gojo GIF</a>from <a href="https://tenor.com/search/gojo+satoru-gifs">Gojo Satoru GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-     <div class="tenor-gif-embed" data-postid="17734091509880850395" data-share-method="host" data-aspect-ratio="0.747664" data-width="44%"><a href="https://tenor.com/view/satoru-gojo-griddy-satoru-gojo-gif-17734091509880850395">Satoru Gojo Griddy GIF</a>from <a href="https://tenor.com/search/satoru+gojo+griddy-gifs">Satoru Gojo Griddy GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script></div>    
-    -->
+    <div class = "form-group">
+        <input type="text" id="pickup" name="pickup" placeholder="Preferred Pickup Time">
     </div>
-    <div id="pointer"></div>
-    <script src="script.js"></script>
+
+    <div class="form-group">
+        <select id="attendance" name="attendance">
+            <option value="attending">Attending</option>
+            <option value="not_attending">Not Attending</option>
+            <option value="maybe">Maybe</option>
+        </select>
+    </div>
+
+    <button type = "submit" class="button">RSVP</button>
+ </form>
+
+    
+
+    <div class="rsvp"></div>
 </body>
-</html>
+<html>
